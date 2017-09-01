@@ -4,7 +4,7 @@
   "description": "screen snippet util for windows",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "preinstall": "npm run build",
+    "start": "npm run build",
     "build": "MSBuild.exe ScreenSnippet.sln /t:rebuild /p:Configuration=Release"
   },
   "repository": {
@@ -17,5 +17,8 @@
     "url": "https://github.com/symphonyoss/ScreenSnippet/issues"
   },
   "homepage": "https://github.com/symphonyoss/ScreenSnippet#readme",
-  "os": "win32"
+  "os": "win32",
+  "devDependencies": {
+    "node-adapter": "github:hadoukenio/node-adapter"
+  }
 }
